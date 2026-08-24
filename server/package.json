@@ -1,0 +1,31 @@
+{
+  "name": "docs-collab-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "npm run prisma:push && node src/seed.js && node src/server.js",
+    "seed": "node src/seed.js",
+    "test": "vitest run",
+    "prisma:push": "prisma db push",
+    "prisma:generate": "prisma generate"
+  },
+  "prisma": {
+    "schema": "prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.3",
+    "marked": "^12.0.2",
+    "multer": "^2.2.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.2.0",
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.8"
+  }
+}

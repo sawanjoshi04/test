@@ -1,0 +1,64 @@
+# Walkthrough video
+
+## Video URL
+
+PASTE-YOUR-UNLISTED-LOOM-OR-YOUTUBE-LINK-HERE
+
+(3–5 min, unlisted Loom/YouTube. Shot list below so the recording takes one take.)
+
+---
+
+## 0:00 — Intro
+
+Show the login screen. Narrate:
+"This is Docs Collab — a tiny, Google-Docs-style collaborative editor for the Ajaia assignment.
+Three demo users, no passwords."
+
+## 0:10 — Sign in as sawan
+
+- Click **sawan@ajaia.local**.
+- Point at the sidebar: **Owned by me** contains **Getting started**; **Shared with me** is empty.
+- Open **Getting started** and point out the already-formatted seeded text.
+
+## 0:40 — Create, rename, save, reload
+
+- Click **+ New doc**.
+- Click the title field in the top bar, rename it to "Team notes", press Enter — the pill shows **Saved**.
+- In the editor: make some text bold and italic, add an H2 heading, then a bullet list and a numbered
+  list. Watch the pill flip **Saving… → Saved**.
+- Refresh the browser. Reopen **Team notes** — text and formatting survived (persistence proved).
+
+## 1:55 — Import a Markdown file
+
+- Click **Import** → choose `demo.md`:
+  ```md
+  # Roadmap
+  - Add realtime collaboration
+  - Add a viewer role
+  ```
+- Confirm the new doc is under **Owned by me** as `demo`, opens immediately, and renders the H1 and
+  bullet list.
+
+## 2:20 — Sharing (the key flow)
+
+- While signed in as saan: open **Team notes** → click **Share** → type `reviewer@ajaia.local` →
+  **Share**. A success toast appears; the reviewer now shows in "People with access".
+- Open the user menu → **Switch user / sign out** → sign in as **reviewer@ajaia.local**.
+- **Team notes** now appears under **Shared with me** with an **Editor** badge.
+- Edit a line as the editor → **Saved**.
+- Try to rename the document → a toast explains **"Only the owner can rename"**.
+- Now sign in as **teammate@ajaia.local**: **Team notes** is absent from the sidebar, and opening the
+  doc's URL shows **"Document not found"** toast (graceful access stall).
+
+## 3:30 — Outro
+
+- Top bar: Import accepts only `.txt` / `.md` / `.markdown`, max 2 MB.
+- One honest line: no real-time collaboration, no viewer role, no delete — documented in
+  SUBMISSION.md.
+- End on the URL: `http://localhost:4000` (or this build's live URL).
+
+---
+
+Notes for the editor: fix the demo doc name ideally to match the recorded screenshot; the email
+`reviewer@ajaia.local` and the exact doc title are the only "live" strings worth re-recording if the
+seed changes.

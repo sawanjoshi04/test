@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ProseMirror {
+  min-height: 360px;
+  line-height: 1.7;
+  color: #1f2937;
+}
+
+.tiptap h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.7em 0 0.35em;
+  line-height: 1.2;
+}
+.tiptap h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.6em 0 0.3em;
+}
+.tiptap h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.5em 0 0.25em;
+}
+.tiptap p {
+  margin: 0.35em 0;
+}
+.tiptap ul,
+.tiptap ol {
+  padding-left: 1.6em;
+  margin: 0.35em 0;
+}
+.tiptap ul {
+  list-style: disc;
+}
+.tiptap ol {
+  list-style: decimal;
+}
+.tiptap li {
+  margin: 0.2em 0;
+}
+.tiptap blockquote {
+  border-left: 3px solid #d1d5db;
+  padding-left: 0.9em;
+  color: #4b5563;
+  font-style: italic;
+  margin: 0.4em 0;
+}
+.tiptap hr {
+  border-top: 2px solid #e5e7eb;
+  margin: 1em 0;
+}
+
+.ProseMirror:focus-within {
+  outline: none;
+}
